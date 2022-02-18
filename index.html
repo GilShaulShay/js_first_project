@@ -9,6 +9,10 @@
             width: 50px;
             height: 50px;
         }
+        .div-heb {
+            /* lang: heb; */
+            direction: rtl;
+        }
     </style>
 </head>
 <body>
@@ -17,10 +21,17 @@
      <div onclick="changeTitle(this)">Div B</div>
      <hr>
      <button onclick="changeSize()">Change Size</button>
-     <span class="color-picker" onclick="changeBackground(this)" style="background: yellow"></span>
-     <span class="color-picker" onclick="changeBackground(this)" style="background: #6cff6c"></span>
-     <span class="color-picker" onclick="changeBackground(this)" style="background: #00fff6"></span>
-
+     <input id="size"/>
+     <div style="margin-top:20px">
+        <span class="color-picker" onclick="changeBackground(this)" style="background: yellow"></span>
+        <span class="color-picker" onclick="changeBackground(this)" style="background: #6cff6c"></span>
+        <span class="color-picker" onclick="changeBackground(this)" style="background: #00fff6"></span>
+     </div>
+     <div class="div-heb">
+         <span>שלום לכולם  </span>
+         <span>DODD</span>
+         <span dir="rtl"> וגם לי</span>
+     </div>
      <!-- Script import -->
      <script src="index.js"></script>
 </body>

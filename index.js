@@ -1,6 +1,5 @@
 function getTitleElement() {
     return document.getElementById("title")
-    return document.getElementsByClassName("color-picker")
 }
 
 function changeTitle(element) {
@@ -13,3 +12,17 @@ function changeBackground(colorElement) {
     title.style.background = colorElement.style.background
 }
 
+function changeSize() {
+    const elements = document.getElementsByClassName("color-picker")
+    const sizeElement = document.getElementById("size")
+    const size  = sizeElement.value
+    if (isNaN(parseInt(size))){
+        alert("Error this is not a number")
+    } else {
+        for ( var i = 0; i < elements.length; i = i + 1 ) {
+            elements[i].style.width = size + "px"
+            elements[i].style.height = size + "px"
+        }
+    }
+
+}
