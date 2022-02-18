@@ -1,11 +1,15 @@
-// First Try
-console.log('Hello World');
-let name = 'Gil';
-console.log(name);
+function getTitleElement() {
+    return document.getElementById("title")
+    return document.getElementsByClassName("color-picker")
+}
 
-var button = document.getElementById("button");
+function changeTitle(element) {
+    const title = getTitleElement()
+    title.innerText = element.textContent
+}
 
-button.onclick = function() {
-    const interstRate =0.3;
-    console.log(interstRate);   
-};
+function changeBackground(colorElement) {
+    const title = getTitleElement()
+    title.style.background = colorElement.style.background
+}
+
